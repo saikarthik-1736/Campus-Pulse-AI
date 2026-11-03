@@ -1,0 +1,544 @@
+
+/* =================================
+   CAMPUSPULSE AI - GENERAL SETTINGS
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #080d1a;
+    color: white;
+    line-height: 1.6;
+}
+
+a, button {
+    transition: all 0.3s ease;
+}
+
+
+/* =================================
+   NAVIGATION BAR
+================================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #0c1426;
+    border-bottom: 1px solid #203451;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.logo span,
+footer span {
+    color: #00c8ff;
+}
+
+nav a {
+    color: #c5d2e8;
+    text-decoration: none;
+    margin: 0 13px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #00c8ff;
+}
+
+.nav-button {
+    background: linear-gradient(135deg, #007bff, #00c8ff);
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.nav-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 18px #007bff55;
+}
+
+
+/* =================================
+   HERO SECTION
+================================= */
+
+.hero {
+    min-height: 600px;
+    padding: 100px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    background:
+        radial-gradient(circle at 80% 40%, #102d55, transparent 35%),
+        #080d1a;
+}
+
+.hero-content {
+    max-width: 580px;
+}
+
+.tagline {
+    color: #00c8ff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #00c8ff;
+}
+
+.description {
+    color: #aab8cf;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.primary-button,
+.secondary-button {
+    text-decoration: none;
+    padding: 14px 23px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.primary-button {
+    background: linear-gradient(135deg, #007bff, #00aaff);
+    color: white;
+}
+
+.primary-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #007bff55;
+}
+
+.secondary-button {
+    border: 1px solid #00c8ff;
+    color: #00c8ff;
+}
+
+.secondary-button:hover {
+    background-color: #00c8ff;
+    color: #080d1a;
+}
+
+
+/* =================================
+   AI ASSISTANT CARD
+================================= */
+
+.hero-card {
+    width: 360px;
+    padding: 30px;
+    background-color: #111d33;
+    border: 1px solid #1e3d63;
+    border-radius: 15px;
+    box-shadow: 0 0 30px #007bff20;
+    transition: 0.3s;
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px #007bff35;
+}
+
+.card-top {
+    color: #c5d2e8;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.online-dot {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: #00ff9d;
+    border-radius: 50%;
+    margin-right: 8px;
+    box-shadow: 0 0 10px #00ff9d;
+}
+
+.hero-card h2 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.hero-card p {
+    color: #9aabc5;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.status-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #182944;
+    padding: 15px;
+    border-radius: 7px;
+    margin-top: 12px;
+    font-size: 13px;
+}
+
+.status-box strong {
+    color: #00d9ff;
+}
+
+
+/* =================================
+   SERVICES SECTION
+================================= */
+
+.services {
+    padding: 85px 8%;
+    text-align: center;
+}
+
+.services h2,
+.complaints h2,
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.service-card {
+    background-color: #111d33;
+    border: 1px solid #203b60;
+    border-radius: 12px;
+    padding: 30px 20px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    border-color: #00c8ff;
+    box-shadow: 0 8px 25px #007bff20;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+
+.service-card p {
+    color: #aab8cf;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   COMPLAINT SECTION
+================================= */
+
+.complaints {
+    padding: 85px 8%;
+    text-align: center;
+    background-color: #0c1426;
+}
+
+.complaints > p:not(.tagline) {
+    color: #aab8cf;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto 0;
+    padding: 35px;
+    background-color: #111d33;
+    border: 1px solid #203b60;
+    border-radius: 15px;
+    box-shadow: 0 10px 35px #00000030;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin: 18px 0 10px;
+    color: #dce8fa;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 14px;
+    background-color: #080d1a;
+    color: white;
+    border: 1px solid #294568;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    transition: 0.3s;
+}
+
+form input:focus,
+form select:focus,
+form textarea:focus {
+    border-color: #00c8ff;
+    box-shadow: 0 0 10px #00c8ff20;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 15px;
+    background: linear-gradient(135deg, #007bff, #00bfff);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px #007bff55;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+#form-message {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-note {
+    color: #8fa5c4;
+    font-size: 12px;
+    line-height: 1.6;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+/* =================================
+   ABOUT SECTION
+================================= */
+
+.about {
+    padding: 85px 15%;
+    text-align: center;
+}
+
+.about p:last-child {
+    color: #aab8cf;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    padding: 35px 8%;
+    text-align: center;
+    background-color: #0c1426;
+    border-top: 1px solid #172744;
+}
+
+footer h2 {
+    margin-bottom: 12px;
+}
+
+footer p {
+    color: #9aabc5;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+/* =================================
+   MOBILE NAVIGATION
+================================= */
+
+.menu-button {
+    display: none;
+    background: none;
+    color: #00c8ff;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =================================
+   TABLET RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 900px) {
+
+    header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        padding: 70px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero-card {
+        width: 320px;
+    }
+
+    .service-card {
+        width: 45%;
+    }
+}
+
+
+/* =================================
+   MOBILE RESPONSIVENESS
+================================= */
+
+@media screen and (max-width: 650px) {
+
+    header {
+        flex-wrap: wrap;
+        position: sticky;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    header nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav a {
+        padding: 12px;
+        margin: 0;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 65px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+
+    .services,
+    .complaints,
+    .about {
+        padding: 60px 6%;
+    }
+
+    .services h2,
+    .complaints h2,
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .service-card {
+        width: 100%;
+    }
+
+    .form-container {
+        padding: 22px;
+    }
+
+    form button {
+        padding: 14px;
+    }
+}
+
+
+/* =================================
+   ACCESSIBILITY
+================================= */
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #00c8ff;
+    outline-offset: 3px;
+}
